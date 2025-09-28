@@ -2,7 +2,7 @@ public class Person {
 
     protected String name;
     protected String surname;
-    protected Gender gender;
+    private final Gender gender;
 
     public Person(String name, String surname, Gender gender) {
         this.name = name;
