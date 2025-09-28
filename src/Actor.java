@@ -10,7 +10,7 @@ public class Actor extends Person {
 
     @Override
     public String toString() {
-        String result = name + " " + surname + ". Рост: " + height + ".";
+        String result = name + " " + surname + " (Рост: " + height + ").";
         return result;
     }
 
