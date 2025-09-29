@@ -1,3 +1,8 @@
+import persons.*;
+import shows.Ballet;
+import shows.Opera;
+import shows.Show;
+
 public class Theatre {
 
     public static void main(String[] args) {
@@ -14,8 +19,8 @@ public class Theatre {
 
         //2 создание спектакля, оперы, балета
         Show show = new Show("Morozko", 90, directorD);
-        Opera opera = new Opera("Carmen", 120, directorE, musicAuthor, "Libretto of Opera", 10);
-        Ballet ballet = new Ballet("Don Kihot", 100, directorE, musicAuthor, "Libretto of Ballet", choreografer);
+        Opera opera = new Opera("Carmen", 120, directorE, musicAuthor, "Libretto of shows.Opera", 10);
+        Ballet ballet = new Ballet("Don Kihot", 100, directorE, musicAuthor, "Libretto of shows.Ballet", choreografer);
 
         //3 распределение актеров по спектаклям
         show.addActor(anatoliy);
@@ -56,7 +61,7 @@ public class Theatre {
 
         //распечатка режисера
         System.out.println();
-        System.out.println(opera.director);
+        System.out.println(opera.getDirector());
 
 
     }

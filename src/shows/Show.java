@@ -1,3 +1,8 @@
+package shows;
+
+import persons.Actor;
+import persons.Director;
+
 import java.util.ArrayList;
 
 public class Show {
@@ -23,20 +28,24 @@ public class Show {
 
     public void addActor (Actor actor) {
         if (listOfActor.contains(actor)) {
-            System.out.println("Актер "+ actor.name + " уже участвует в постановке");
+            System.out.println("Актер "+ actor.getName() + " уже участвует в постановке");
         } else {
             listOfActor.add(actor);
-            System.out.println("Актер " + actor.name + " добавлен в " + title);
+            System.out.println("Актер " + actor.getName()  + " добавлен в " + title);
         }
     }
 
     public void changeActor(Actor actor, Actor newActor) {
         if (listOfActor.contains(actor)) {
             listOfActor.set(listOfActor.indexOf(actor), newActor);
-            System.out.println("\nАктер " + actor.name + " заменен актером " + newActor.name);
+            System.out.println("\nАктер " + actor.getName()  + " заменен актером " + newActor.getName());
         } else {
-            System.out.println("\nАктер " + actor.name + " не участвует в этой постановке");
+            System.out.println("\nАктер " + actor.getName() + " не участвует в этой постановке");
         }
 
+    }
+
+    public String getDirector() {
+        return director.toString();
     }
 }

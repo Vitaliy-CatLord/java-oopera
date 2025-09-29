@@ -1,4 +1,8 @@
-import java.util.ArrayList;
+package shows;
+
+import persons.Choreografer;
+import persons.Director;
+import persons.MusicAuthor;
 
 public class Ballet extends MusicalShow{
     protected Choreografer choreographer;
